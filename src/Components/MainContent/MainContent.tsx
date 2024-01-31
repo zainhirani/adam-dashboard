@@ -1,3 +1,4 @@
+import ButtonGroup from "../ButtonGroup/ButtonGroup";
 import MonthlyReportCard from "../MonthlyReportCard/MonthlyReportCard";
 import ReddyScoreCard from "../ReddyScoreCard/ReddyScoreCard";
 
@@ -52,6 +53,26 @@ const MainContent = () => {
       RoiAmount: "$253,515",
     },
   ];
+  const buttonItems = [
+    {
+      id: 1,
+      title: "Monthly",
+      ariaCurrent: "page",
+      link: "javascript:",
+    },
+    {
+      id: 2,
+      title: "Weekly",
+      ariaCurrent: "false",
+      link: "javascript:",
+    },
+    {
+      id: 3,
+      title: "Today",
+      ariaCurrent: "false",
+      link: "javascript:",
+    },
+  ];
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
@@ -70,25 +91,13 @@ const MainContent = () => {
           <div className="flex flex-wrap items-center justify-between">
             <h3 className="text-[22px] lg:text-[36px] font-bold">Revenue</h3>
             <div className="flex items-center rounded-full p-1 bg-slate-100">
-              <a
-                href="javascript:"
-                aria-current="page"
-                className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 rounded-full hover:bg-custom-purple-400 hover:text-white focus:z-10 focus:bg-custom-purple-400 focus:text-white"
-              >
-                Monthly
-              </a>
-              <a
-                href="javascript:"
-                className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 rounded-full hover:bg-custom-purple-400 hover:text-white focus:z-10 focus:bg-custom-purple-400 focus:text-white"
-              >
-                Weekly
-              </a>
-              <a
-                href="javascript:"
-                className="px-4 py-2 text-sm font-medium text-gray-300 bg-gray-100 rounded-full hover:bg-custom-purple-400 hover:text-white focus:z-10 focus:bg-custom-purple-400 focus:text-white"
-              >
-                Today
-              </a>
+              {buttonItems.map((item) => (
+                <ButtonGroup
+                  key={item.id}
+                  title={item.title}
+                  link={item.link}
+                />
+              ))}
             </div>
           </div>
           <div className="imgBox mt-10">
