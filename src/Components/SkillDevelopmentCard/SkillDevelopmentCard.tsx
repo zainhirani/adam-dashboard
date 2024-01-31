@@ -1,5 +1,3 @@
-import React from "react";
-
 interface DevelopmentCardsProps {
     title: string;
     rating: string;

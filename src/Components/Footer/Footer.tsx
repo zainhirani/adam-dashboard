@@ -1,4 +1,3 @@
-import React from "react";
 import SkillDevelopmentCard from "../SkillDevelopmentCard/SkillDevelopmentCard";
 
 const Footer = () => {

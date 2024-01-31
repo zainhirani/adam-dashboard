@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <div className="flex flex-wrap gap-3 border-2 border-custom-purple-400 rounded-2xl items-center justify-between p-6 mt-5 bg-custom-purple-100">

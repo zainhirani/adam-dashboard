@@ -1,4 +1,3 @@
-import React from "react";
 import MonthlyReportCard from "../MonthlyReportCard/MonthlyReportCard";
 import ReddyScoreCard from "../ReddyScoreCard/ReddyScoreCard";
 
