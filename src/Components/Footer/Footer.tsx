@@ -28,8 +28,8 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 gap-2 divide-y lg:divide-y-0 lg:divide-x border p-5 mt-5 rounded-2xl">
-      <div className="lg:col-span-3 lg:pr-12">
+    <div className="grid grid-cols-1 xl:grid-cols-5 gap-2 divide-y xl:divide-y-0 xl:divide-x border p-5 mt-5 rounded-2xl">
+      <div className="xl:col-span-3 lg:pr-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           {developmentCardItems.map((item) => (
             <SkillDevelopmentCard
@@ -41,7 +41,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="lg:col-span-2 p-4 flex items-center lg:pl-12">
+      <div className="xl:col-span-2 p-4 flex items-center xl:pl-12">
         <div className="flex flex-wrap gap-2">
           <h3 className="font-bold text-[18px]">Skill development</h3>
           <p className="text-base mb-2">

@@ -54,7 +54,7 @@ const MainContent = () => {
   ];
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
         {monthlyCardItems.map((item) => (
           <MonthlyReportCard
             key={item.id}
@@ -65,7 +65,7 @@ const MainContent = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 mt-5">
         <div className="lg:col-span-2 border p-5 rounded-2xl">
           <div className="flex flex-wrap items-center justify-between">
             <h3 className="text-[22px] lg:text-[36px] font-bold">Revenue</h3>
